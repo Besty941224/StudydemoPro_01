@@ -1,0 +1,386 @@
+ @charset "utf-8";
+html {
+	font: 12px "宋体";
+}
+a{
+	color: #000;
+}
+.top {
+	background-color: #f7f7f7;
+	height: 26px;
+	border-bottom: 1px solid #d8d8d8;
+}
+.top_page {
+	width: 970px;
+	height: 26px;
+	margin: 0 auto;
+}
+.top_page_l {
+	line-height: 26px;
+}
+.top_page_r p {
+	line-height: 26px;
+}
+.logo {
+	width: 970px;
+	height: 98px;
+	margin: 0 auto;
+}
+.logo_l {
+	width: 200px;
+	height: 55px;
+	background: url(../image/sanjiao.png) -20px 0;   /*精灵图只显示左上角，需要对显示的图片进行位移  看精灵图中图片的 X Y 轴坐标*/
+	margin: 24px 0 19px 9px;
+	text-indent: -999px;       /*将梅兰商贸logo的位置加的文字往左边缩进999个单位，可使页面不显示，但是可爬虫，优化SU*/
+}
+.logo_r {
+	width: 530px;
+	height: 42px;
+	border: 1px solid #c9c9c9;
+	margin-top: 29px;
+} 
+.logo_r_connet {
+	margin: 5px 5px 5px 4px;
+}
+.logo_r_search {
+	width: 418px;
+	height: 29px;
+	border: 1px solid #c9c9c9;      /*搜索框的高度和宽度应该是内容区域和边框的像素的和，所以可能搜索框的高度高于按钮的高度*/
+	color: #999999;
+}
+.logo_r_btn {
+	width: 99px;
+	height: 30px;
+	color: white;
+	background-color: #2f70d0;
+}
+.nav {
+	width: 970px;
+	height: 25px;
+	margin: 0 auto;
+	border-bottom: 2px solid #0266a3;
+}
+.nav li {
+	float: left;
+	line-height: 25px;
+	padding: 0 15px 0 15px;           /*将li标签文字间隔开*/
+	font-size: 14px;
+	font-weight: bold;             /*将文字加粗*/
+}
+.nav li a {
+	color: #0266a3;               /*a标签无法继承父级标签的文本属性，比如说颜色*/
+}
+.nav li:hover {
+	background-color: #0266a3;        /*鼠标覆盖在li标签上时，整个li标签变颜色*/
+}
+.nav li:hover a {
+ 	color: white;                     /*鼠标覆盖在li标签上时，a标签的字体的颜色变白*/
+}
+.banner {
+	width: 970px;
+	height: 210px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.subNav {
+	width: 200px;
+	height: 210px;
+}
+.ad {
+	width: 520px;
+	height: 210px;
+	background-color: yellow;
+	margin-left: 10px;
+}
+.message{
+	width: 230px;
+	height: 210px;
+}
+.subNav h2 {
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	font-weight: bold;           /*将文字加粗*/
+	background-color: #0266a3;
+	color: white;
+	padding-left: 20px;
+}
+.subNav {
+	background-color: #EBF0F6;
+}
+.subNav s {
+	display: inline-block;           /*s标签为行内标签，设置宽高则必须要将行内标签设置为块级标签*/
+	width: 16px;
+	height: 13px;
+	background: url(../image/sanjiao.png) -225px 0;
+	vertical-align: middle;           /*将图片和文字对上下对齐*/
+}   
+.subNav li{
+	font-size: 15px;
+	padding-top: 11px;
+	margin-left: 9px;
+}
+.subNav li a {
+	padding-left: 15px;
+}
+.message_top {
+	height: 95px;
+	border: 1px solid #dddddd;
+	background-color: #f7faff;
+}
+.message_buttom {
+	height: 92px;
+	background-color: #f7f7f7;
+	margin-top: 21px;
+}
+.message_top s {
+	display: inline-block;           /*s标签为行内标签，设置宽高则必须要将行内标签设置为块级标签*/
+	width: 40px;
+	height: 40px;
+	background: url(../image/sanjiao.png) -247px 0;
+	margin: 20px 10px 0 10px;          /*前面已经将s标签设置为块级标签，所以设置他和其他盒子的宽度需要用 margin*/
+}
+.message_top .fw {
+	font-weight: bold;
+	padding: 7px 0 0 18px;
+}
+.message_top p{
+	padding-top: 25px;
+}
+.message_buttom_top {
+	font-size: 14px;
+	color: #999999;
+	padding: 11px 20px 0 18px;
+}
+.message_buttom_phone {
+	font-size: 12px;
+	color: #80B2E6;
+	padding: 11px 34px 0 32px;
+}
+.message_buttom .btn {
+	width: 81px;
+	height: 23px;
+	background: url(../image/sanjiao.png) -296px 0;
+	margin-top: 9px;
+	margin-left: 75px;
+}
+.material {
+	width: 950px;              /*由于字体向左设置 margin:20px;  所以整个div扩大了 20px  ，所以要在原来的版心 宽度上减少20px,变成950px,就刚刚好。*/
+	height: 34px;
+	margin: 0 auto;
+	margin-top: 15px;
+	background-color: #ECF1F7;
+	line-height: 34px;
+	padding-left: 19px;
+	font-size: 14px;
+	font-weight: bold;              /*加粗字体*/
+	color: #666666;
+	border-top: 2px solid #C3D6E4;
+}
+.pro {
+	width: 970px;
+	height: 351px;
+	margin: 0 auto;
+	margin-top: 13px;
+}
+.product {
+	width: 720px;
+	height: 349px;
+	border: 1px solid #CCCCCC;
+}
+.p_top {
+	width: 700px;
+	height: 110px;
+	margin: 25px 0 0 20px;
+}
+.p_top_l {
+	width: 350px;
+	height: 110px;
+}
+.p_top_l_pho {
+	width: 100px;
+	height: 110px;
+	background: url(../image/sanjiao.png) -385px 0;
+}
+.p_top_l_word {
+	width: 230px;
+	height: 110px;
+}
+.p_top_r {
+	width: 350px;
+	height: 110px;
+}
+.p_top_r_pho {
+	width: 100px;
+	height: 110px;
+	background: url(../image/sanjiao.png) -489px 0;
+}
+.p_top_r_word {
+	width: 230px;
+	height: 110px;
+}
+.p_btm {
+	width: 700px;
+	height: 110px;
+	margin: 55px 0 0 20px;
+}
+.p_btm_l {
+	width: 350px;
+	height: 110px;
+}
+.p_btm_l_pho {
+	width: 100px;
+	height: 110px;
+	background: url(../image/sprite.png);
+}
+.p_btm_l_word {
+	width: 230px;
+	height: 110px;
+}
+.p_btm_r {
+	width: 350px;
+	height: 110px;
+}
+.p_btm_r_pho {
+	width: 100px;
+	height: 110px;
+	background: url(../image/sprite.png) -105px 0;
+}
+.p_btm_r_word {
+	width: 230px;
+	height: 110px;
+}
+.biaoti {
+	margin-top: 6px;
+}
+.jieshao {
+	margin-top: 11px;
+	color: #cc6600;
+}
+.huanhang {
+	margin-top: 11px;
+	color: #cc6600;
+}
+.btn {
+	width: 98px;
+	height: 26px;
+	background-color: #0984E2;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 5px 0 0 1px;
+}
+.mes {
+	width: 230px;
+	height: 349px;
+	border: 1px solid #CCCCCC;
+}
+.mes h2 {
+	width: 230px;
+	height: 37px;
+	line-height: 37px;
+	padding-left: 9px;
+	border-bottom: 1px solid #cccccc; 
+}
+.mes ul {
+	padding-top: 11px;
+}
+.mes li {
+	line-height: 25px;
+	padding-left: 16px;
+}
+.mes ul s {
+	display: inline-block;
+	width: 4px;
+	height: 4px;
+	background: url(../image/sanjiao.png) 0 -17px;
+	padding-left: 10px;     /*s标签为行内标签，设置宽高则必须要将行内标签设置为块级标签*/
+	vertical-align: middle;
+}
+.yimin {
+	width: 970px;
+	height: 308px;
+	margin: 0 auto;
+	margin-top: 13px;
+}
+.yimin_l {
+	width: 720px;
+	height: 300px;
+	border: 1px solid #ccc;
+}
+.y_l_box1 {
+	width: 164px;
+	height: 246px;
+	background-color: white;
+	margin: 10px 0 0 13px;
+}
+.y_l_box1 s {
+	display: inline-block;
+	width: 164px;
+	height: 170px;
+	background: url(../image/sprite.png) -308px 0;
+}
+.name {
+	text-align: center;
+	color: #000000;
+}
+.exce {
+	text-align: center;
+	color: #666666;
+	line-height: 19px;
+}
+.exce span {
+    text-decoration:line-through;
+}
+.exce em {
+	font-size: 16px;
+	color: #B20000;
+}
+.y_l_box2 {
+	width: 164px;
+	height: 246px;
+	background-color: white;
+	margin: 10px 0 0 12px;
+}
+.y_l_box2 s {
+	display: inline-block;
+	width: 164px;
+	height: 170px;
+	background: url(../image/sprite.png) -473px 0;
+}
+.yimin_r {
+	width: 230px;
+	height: 309px;
+}
+.lianjie {
+	width: 970px;
+	height: 44px;
+	margin: 0 auto;
+	border-top: 1px solid #CCCCCC;
+	border-bottom: 3px solid #097EC3;
+	margin-top: 13px;
+}
+.lianjie li {
+	float: left;
+	line-height: 44px;
+}
+.lianjie .youqing {
+	margin-right: 6px;
+}
+.lianjie li a {
+	margin-left: 10px;
+	color: #606060;
+}
+.lianjie li a:hover {
+    color: #6AC2EE;
+}
+.we {
+	width: 970px;
+	height: 47px;
+	margin: 0 auto;
+}
+.we p {
+	text-align: center;
+	line-height: 22px;
+	color: #606060;
+}
